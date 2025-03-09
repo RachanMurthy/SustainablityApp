@@ -47,4 +47,4 @@ class SingleActionView(APIView):
     def delete(self, request, id):
         action = get_object_or_404(SustainableAction, id=id)
         action.delete()
-        return Response({"message": "Deleted successfully"}, status=status.HTTP_204_NO_CONTENT)
+        return Response(status=status.HTTP_204_NO_CONTENT)

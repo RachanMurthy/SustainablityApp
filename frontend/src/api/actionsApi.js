@@ -2,6 +2,7 @@ import axios from "axios";
 
 const API_URL = "http://127.0.0.1:8000/api/actions/";
 
+// GET
 // Get all actions
 export const getActions = async () => {
     try {
@@ -13,6 +14,7 @@ export const getActions = async () => {
     }
 };
 
+// POST
 // Create a new action
 export const createAction = async (data) => {
     try {
@@ -22,7 +24,7 @@ export const createAction = async (data) => {
         console.error("Error creating action:", error);
     }
 };
-
+// PUT
 // Update an existing action
 export const updateAction = async (id, data) => {
     try {
@@ -33,6 +35,7 @@ export const updateAction = async (id, data) => {
     }
 };
 
+// DELETE
 // Delete an action
 export const deleteAction = async (id) => {
     try {
