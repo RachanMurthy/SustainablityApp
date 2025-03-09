@@ -1,4 +1,5 @@
 # Sustainability App 🌱
+> **Note:** This project currently doesn't use environment variables (.env).
 
 A full-stack web application designed to track and manage sustainable actions. Users can log their eco-friendly activities, assign points to these actions, and track their sustainability journey over time.
 
@@ -90,5 +91,3 @@ cd frontend
 npm run dev
 ```
 The frontend development server will start at `http://localhost:3000`
-
-## Project Structure
