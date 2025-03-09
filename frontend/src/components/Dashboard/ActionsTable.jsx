@@ -1,5 +1,7 @@
 import React from "react";
 
+// This is a React component that renders a table displaying a list of actions with options
+// to edit or delete each action.
 const ActionsTable = ({ actions, handleEdit, handleDelete }) => {
   return (
     <div className="actions-table">

@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import InputForm from "./InputForm";
+import { createAction, deleteAction, getActions, updateAction } from "../../api/actionsApi";
 import ActionsTable from "./ActionsTable";
-import { getActions, createAction, updateAction, deleteAction } from "../../api/actionsApi";
-import "./Dashboard.css"; // Import updated styles
+import "./Dashboard.css";
+import InputForm from "./InputForm";
 
+// This is a React component for a dashboard that manages actions with an input form and a table.
 const Dashboard = () => {
   const [actions, setActions] = useState([]);
   const [form, setForm] = useState({ action: "", date: "", points: 0, id: null });
